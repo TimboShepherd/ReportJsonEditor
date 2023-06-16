@@ -3,11 +3,11 @@ using ReportJsonEditor.Models;
 
 namespace ReportJsonEditor.Services
 {
-    public class JsonService
+    public class ReportService
     {
         private readonly string jsonFilePath;
 
-        public JsonService(string jsonFilePath)
+        public ReportService(string jsonFilePath)
         {
             this.jsonFilePath = jsonFilePath;
         }

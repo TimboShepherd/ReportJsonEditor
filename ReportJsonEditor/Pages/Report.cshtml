@@ -1,11 +1,16 @@
 ﻿@page
-@model PrivacyModel
+@model ReportModel
 @{
     ViewData["Title"] = "Report";
 }
 <h1>@ViewData["Title"]</h1>
 
 <p>Display the json text here</p>
+
+<h2>
+    @Model.Report.ReportName
+</h2>
+
 <pre>
-    
+    @Model.JsonText
 </pre>
