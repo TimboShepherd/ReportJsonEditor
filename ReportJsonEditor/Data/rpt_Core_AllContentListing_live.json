@@ -1,0 +1,44 @@
+﻿{
+  "reportName": "All Content Listing",
+  "reportCode": "Content_Listing",
+  "reportDescription": "A list of all learning modules in the system, with corresponding details.",
+  "reportAdminNotes": "",
+  "active": 1,
+  "userGroups": [
+    {
+      "groupCode": "ReportingAdmins",
+      "forcedValues": []
+    },
+	{
+      "groupCode": "Supportusers",
+      "forcedValues": [ ]
+    }
+  ],
+  "executiontiming": "immediate",
+  "outputType": "xlsx",
+  "dataSource": {
+    "dataSourceName": "",
+    "reportSelectTemplate": "rpt_Core_AllContentListing_live"
+  },
+  "reportInputs": [
+    {
+      "inputName": "IncludeDeleted",
+      "inputType": "number",
+      "defaultValue": "0",
+      "uiLabel": "Include deleted modules?",
+      "uiControlType": "dropdownSingle",
+      "liveSearchQuery": "",
+      "dropdownLookupName": "cirrus.system.yesNoNumeric",
+      "required": true,
+      "inputPlaceholder": "",
+      "inputSelectWhereTemplate": ""
+    },
+    {
+      "inputName": "LoggedInUserId",
+      "inputType": "systemInfoNumber",
+      "defaultValue": "usercontext.userid",
+      "uiControlType": "hidden",
+      "required": true
+    }
+  ]
+}
